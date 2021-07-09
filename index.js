@@ -65,6 +65,6 @@ app.get('/' , (req , res) => {
   return res.status(201).send({success : true })
 })
 
-app.listen(8090, () => {
+app.listen(process.env.PORT, () => {
   console.log("Backend server is running!");
 });
