@@ -9,6 +9,7 @@ const multer = require("multer");
 const userRoute = require("./routes/users");
 const authRoute = require("./routes/auth");
 const postRoute = require("./routes/posts");
+const tasksRoute = require("./routes/tasks");
 const conversationRoute = require("./routes/conversations");
 
 
@@ -61,6 +62,7 @@ app.use("/api/users", userRoute);
 app.use("/api/posts", postRoute);
 app.use("/api/conversations", conversationRoute);
 app.use("/api/messages", messageRoute);
+app.use("/api/tasks", tasksRoute);
 
 
 app.get('/' , (req , res) => {
